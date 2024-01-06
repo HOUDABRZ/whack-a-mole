@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  background-color: antiquewhite;
+  flex-direction: column;
+}
+.container {
+  background-image: url(./images/sol.png);
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 10px solid #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.container div {
+  background-image: url(./images/pipe.png);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  cursor: url("./images/hammer.png"), auto;
+}
+.container div img {
+  width: 80px;
+  height: 80px;
+  user-select: none;
+  position: absolute;
+  bottom: 90px; /* Start with mole fully hidden */
+}
+button {
+  padding: 15px 30px;
+  font-size: 24px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(225, 182, 117);
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
